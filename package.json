@@ -10,5 +10,7 @@
   "devDependencies": {
     "mdx-deck": "^3.0.13"
   },
-  "dependencies": {}
+  "dependencies": {
+    "@mdx-deck/themes": "3.0.8"
+  }
 }
