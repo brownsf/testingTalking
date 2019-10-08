@@ -11,6 +11,7 @@
     "mdx-deck": "^3.0.13"
   },
   "dependencies": {
+    "@mdx-deck/layouts": "2.5.0",
     "@mdx-deck/themes": "3.0.8"
   }
 }

@@ -1,25 +1,99 @@
-import { Head, Notes } from 'mdx-deck'
+import { Head, Notes, CodeSnippet, Image } from 'mdx-deck'
 import { theme } from './theme'
-import {yellow} from 'mdx-deck/themes'
+import { future } from 'mdx-deck/themes'
+import { Appear, Split } from 'mdx-deck'
 
-export const themes = [ theme, yellow ]
+export const themes = [ theme, future ]
 
 <Head>
-  <title>Presentation Title</title>
+  <title>Totally Testing React</title>
 </Head>
 
-# Hello
+### Totally Testing React
+Scott Brown<br/>Sr Consultant<br/>Daugherty Business Solutions
 
 ---
 
-## Edit this file
+### Background
 
-To create your presentation
-
-<Notes>
-Create speaker notes with the Notes component
-</Notes>
+<ul>
+<li>Digital Marketing</li>
+<li>Startups</li>
+<li>Enterprise</li>
+</ul>
 
 ---
 
-<https://github.com/jxnblk/mdx-deck>
+#### What We're Going to Cover
+<ul>
+<li>Types of testing</li>
+<li>Why to test</li>
+<li>What to test</li>
+<li>React Testing Toolbox</li>
+<li>Examples</li>
+</ul>
+
+---
+
+### Types of Testing
+<ul>
+<Appear>
+<li>Static</li>
+<li>Unit</li>
+<li>Integration</li>
+<li>End to End</li>
+</Appear>
+</ul>
+
+---
+
+<Image src="https://i.giphy.com/l0MYSpvx4pnsoMNz2.gif"/>
+---
+
+### Why to test
+
+<ul>
+<Appear>
+<li>Improve code quality and stability</li>
+<li>Simplify code refactoring</li>
+<li>Improve documentation</li>
+</Appear>
+</ul>
+
+---
+
+### Why not to test
+
+<ul>
+<li>Hit an abitrary coverage percentage</li>
+<li>Lock down implementaion</li>
+</ul>
+
+---
+
+### What to test
+<ul>
+<li>User interactions</li>
+<li>Changing props</li>
+<li>Context changes</li>
+<li>Subscription changes</li>
+</ul>
+
+---
+
+### React Testing Toolbox
+#### Static Testing
+<ul>
+  <li>Linters
+    <ul>
+      <li>Eslint</li>
+    </ul>
+  </li>
+  <li>Type Checkers
+    <ul>
+      <li>Typescript</li>
+      <li>Flow</li>
+      <li>ReasonML</li>
+    </ul>
+  </li>
+</ul>
