@@ -1,7 +1,8 @@
-import { Head, Notes, CodeSnippet, Image } from 'mdx-deck'
+import { Head, Notes, Image } from 'mdx-deck'
 import { theme } from './theme'
 import { future } from 'mdx-deck/themes'
 import { Appear, Split } from 'mdx-deck'
+import sponser from './SponsorSlide.png'
 
 export const themes = [ theme, future ]
 
@@ -14,6 +15,11 @@ Scott Brown<br/>Sr Consultant<br/>Daugherty Business Solutions
 
 ---
 
+<Image src={sponser}/>
+
+
+---
+
 ### Background
 
 <ul>
@@ -21,6 +27,11 @@ Scott Brown<br/>Sr Consultant<br/>Daugherty Business Solutions
 <li>Startups</li>
 <li>Enterprise</li>
 </ul>
+
+---
+#### Influence
+##### Kent C Dodds
+https://kentcdodds.com/
 
 ---
 
@@ -35,7 +46,7 @@ Scott Brown<br/>Sr Consultant<br/>Daugherty Business Solutions
 
 ---
 
-### Types of Testing
+#### Types of Testing
 <ul>
 <Appear>
 <li>Static</li>
@@ -45,12 +56,19 @@ Scott Brown<br/>Sr Consultant<br/>Daugherty Business Solutions
 </Appear>
 </ul>
 
+<Notes>
+Unit testing is a software testing where individual units (components) of a software are tested. The purpose of unit testing is to validate that each unit of the software performs as designed. A unit is the smallest testable part of any software.
+Integration tests are used to test multiple, bigger units (components) in interaction, and can sometimes even span multiple systems. The purpose of integration tests is to find bugs in the connections and dependencies between various components, such as: Passing invalid or incorrectly ordered arguments.
+e2e Testing how scenarios function on the product itself, by controlling the browser or the website. These tests usually ignore the internal structure of the application entirety and looks at them from the outside like on a black box.
+</Notes>
+
 ---
 
 <Image src="https://i.giphy.com/l0MYSpvx4pnsoMNz2.gif"/>
+
 ---
 
-### Why to test
+#### Why to test
 
 <ul>
 <Appear>
@@ -78,11 +96,12 @@ Scott Brown<br/>Sr Consultant<br/>Daugherty Business Solutions
 <li>Context changes</li>
 <li>Subscription changes</li>
 </ul>
-
+<Notes>
+Subscriptions - websockets or firebase
+</Notes>
 ---
 
-### React Testing Toolbox
-#### Static Testing
+### React Testing Toolbox<br/>Static Testing
 <ul>
   <li>Linters
     <ul>
@@ -96,4 +115,35 @@ Scott Brown<br/>Sr Consultant<br/>Daugherty Business Solutions
       <li>ReasonML</li>
     </ul>
   </li>
+</ul>
+<Notes>
+  Prettier
+  </Notes>
+---
+
+### React Testing Toolbox<br/>Unit Testing
+
+<ul>
+  <li>Test Runners - Mocha</li>
+  <li>Assertion Libraries - Chai</li>
+  <li>Mocking Libraries - Sinon</li>
+</ul>
+<Appear>
+<p>Our just use Jest</p>
+</Appear>
+
+---
+
+### React Testing Toolbox<br/>Integration Testing
+<ul>
+  <li>Enzyme</li>
+  <li>React Testing Library</li>
+</ul>
+
+---
+### React Testing Toolbox<br/>End to End Testing
+<ul>
+  <li>Selenium</li>
+  <li>Nightwatch.js </li>
+  <li>Cypress</li>
 </ul>
